@@ -1,96 +1,194 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'LatoWeb', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  background: linear-gradient(136.56deg, #8a53b6 0%, #cea2d0 97.42%) no-repeat;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter';
 }
 
 .card {
-  padding: 2em;
+  display: flex;
+  background: white;
+  min-height: 680px;
+  max-width: 990px;
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: -2;
 }
 
-.read-the-docs {
-  color: #888;
+.card__header,
+.card__body {
+  width: 50%;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.card__header {
+  background: #f3f4f6;
+}
+
+.card .short-logo {
+  margin-bottom: 32px;
+}
+
+.card__info {
+  padding: 0 25px;
+}
+
+.card__info p {
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* JAR */
+
+.jar {
+  position: relative;
+  text-align: center;
+}
+
+.jar__bg {
+  width: 215px;
+  height: 215px;
+  margin-bottom: 20px;
+}
+
+.jar__glass {
+  height: 203px;
+  width: 155px;
+  left: 35px;
+  top: 10px;
+  position: absolute;
+}
+
+.jar__owner {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.jar__name {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+/* STATS */
+
+.stats {
+  margin-top: 16px;
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.stats-data {
+  display: flex;
+  gap: 12px;
+  padding: 0 20px;
+  margin: 12px 0;
+}
+
+.stats-data:not(:last-child) {
+  border-right: solid #ccc 0.5px;
+}
+
+.stats-data__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+}
+
+.stats-data__value {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+/* FORM */
+
+.card__wrap {
+  position: relative;
+  background-clip: padding-box !important;
+  padding: 24px;
+  border: solid 3px transparent;
+  background: #fff;
+  border-radius: 24px;
+  width: 100%;
+}
+
+.card__wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: 24px;
+  background: linear-gradient(92.12deg, #57b5f9 0%, #da11ba 100%);
+}
+
+.card__title {
+  font-size: 14px;
+  text-align: center;
+}
+
+.card__img {
+  width: 16px;
+  margin-left: 0.5em;
+  margin-bottom: -3px;
+}
+
+.card__value {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card__btn {
+  display: flex;
+  gap: 16px;
+}
+
+.btn__value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 0 3px;
+  min-height: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn__value:hover {
+  background: #e6e6e6;
 }
