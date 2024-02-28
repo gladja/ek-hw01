@@ -11,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/ek-hw01/assets/index-DOr6_GV5.js"></script>
-    <link rel="stylesheet" crossorigin href="/ek-hw01/assets/index-CCbzr8nu.css">
+    <script type="module" crossorigin src="/ek-hw01/assets/index-DRf0821X.js"></script>
+    <link rel="stylesheet" crossorigin href="/ek-hw01/assets/index-DW2ij66r.css">
   </head>
   <body>
     <section class="card">
@@ -76,11 +76,19 @@
               class="card__img"
             />
           </div>
-          <div class="card__value">0<span>&nbsp;₴</span></div>
+          <div class="card__value">
+            <span class="card__value-sum">0</span>&nbsp;₴
+          </div>
           <div class="card__btn">
-            <div class="btn__value">+100&nbsp;₴</div>
-            <div class="btn__value">+500&nbsp;₴</div>
-            <div class="btn__value">+1&nbsp;000&nbsp;₴</div>
+            <button type="button" class="btn__value" data-action="add_100">
+              +100&nbsp;₴
+            </button>
+            <button class="btn__value" data-action="add_500">
+              +500&nbsp;₴
+            </button>
+            <button class="btn__value" data-action="add_1000">
+              +1&nbsp;000&nbsp;₴
+            </button>
           </div>
         </div>
       </div>
