@@ -11,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/ek-hw01/assets/index-DizmWZvH.js"></script>
-    <link rel="stylesheet" crossorigin href="/ek-hw01/assets/index-DZDURCQZ.css">
+    <script type="module" crossorigin src="/ek-hw01/assets/index-Dbs0GdXY.js"></script>
+    <link rel="stylesheet" crossorigin href="/ek-hw01/assets/index-Ck807XZc.css">
   </head>
   <body>
     <section class="card">
@@ -26,8 +26,18 @@
           <img class="jar__bg" src="https://send.monobank.ua/img/jar_bg.png" />
           <img
             class="jar__glass"
-            src="https://send.monobank.ua/img/jar/uah_50.png"
+            src="https://send.monobank.ua/img/jar/0.png"
           />
+          <div class="grid-container">
+            <img
+              class="grig"
+              src="https://send.monobank.ua/img/jar/grid.png"
+              alt="grid"
+            />
+            <div class="jar-label jar-goal">25&nbsp;000</div>
+            <div class="jar-label jar-middle">12&nbsp;500</div>
+            <div class="jar-label jar-bottom">0</div>
+          </div>
           <p class="jar__owner">Артем К. збирає</p>
           <p class="jar__name">На ремонт медеваку</p>
         </div>
@@ -52,7 +62,9 @@
             />
             <div class="stats-data__text-container">
               <div class="stats-data__label">Накопичено</div>
-              <div class="stats-data__value">7&nbsp;700₴</div>
+              <div class="stats-data__value">
+                <span class="stats__data">0</span>&nbsp;₴
+              </div>
             </div>
           </div>
           <div class="stats-data">
@@ -100,36 +112,37 @@
           </div>
         </div>
 
-        <div class="card__input">
-          <input
-            class="card__input-value"
-            placeholder="Ваше ім'я (необов'язково)"
-          />
-        </div>
-        <div class="field card-holder">
-          <input
-            class="card__input-value"
-            placeholder="Коментар (необов'язково)"
-          />
-        </div>
+        <form action="">
+          <div class="card__input">
+            <input
+              class="card__input-value card__name"
+              placeholder="Ваше ім'я (необов'язково)"
+            />
+          </div>
+          <div class="field card-holder">
+            <input
+              class="card__input-value card__comment"
+              placeholder="Коментар (необов'язково)"
+            />
+          </div>
 
-        <button class="btn__pay">
-          <img
-            src="https://send.monobank.ua/img/mono_pay.svg"
-            alt="monobank"
-            height="26"
-          />
-        </button>
-        <button class="btn__pay">
-          <img
-            src="https://gstatic.com/instantbuy/svg/dark_gpay.svg"
-            alt="google pay"
-            height="26"
-          />
-        </button>
+          <button class="btn__pay btn__mono" type="submit">
+            <img
+              src="https://send.monobank.ua/img/mono_pay.svg"
+              alt="monobank"
+              height="26"
+            />
+          </button>
+          <button class="btn__pay btn__gpay" type="submit">
+            <img
+              src="https://gstatic.com/instantbuy/svg/dark_gpay.svg"
+              alt="google pay"
+              height="26"
+            />
+          </button>
+        </form>
 
         <div class="other__pay">
-          <!-- <hr id="hideHr" class="splitter" /> -->
           <div class="other__pay-button">
             <img
               src="https://send.monobank.ua/img/card.svg"
