@@ -15,6 +15,7 @@ body {
   background: linear-gradient(136.56deg, #8a53b6 0%, #cea2d0 97.42%) no-repeat;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Inter';
@@ -222,7 +223,6 @@ body {
 }
 
 /* input */
-
 .card__input-value {
   font-size: 16px;
   width: 340px;
@@ -295,4 +295,52 @@ body {
 
 .other__pay-text {
   color: red;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  width: 990px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.footer__copyright {
+  width: 300px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.8;
+}
+
+.button__wrap {
+  display: flex;
+  gap: 16px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 0 16px;
+  height: 40px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.footer__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
