@@ -31,7 +31,7 @@ const gerLocalStorege = () => {
     localStorage.setItem('value', '0');
     return;
   }
-  statsValue.textContent = value;
+  statsValue.textContent = value.toLocaleString('ru-RU');
   valueStatus = value;
   changeImg(valueStatus);
 };
@@ -91,7 +91,7 @@ function formValue(e) {
   console.log(value);
 
   valueStatus += counterValue;
-  statsValue.textContent = valueStatus;
+  statsValue.textContent = valueStatus.toLocaleString('ru-RU');
   localStorage.setItem('value', JSON.stringify(valueStatus));
 
   inputName.value = '';
