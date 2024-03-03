@@ -96,6 +96,40 @@ body {
   margin-bottom: 12px;
 }
 
+/* grid */
+.grid-container {
+  position: absolute;
+  top: 34px;
+  left: 50px;
+}
+
+.grid {
+  width: 42px;
+  height: 168px;
+}
+
+.jar-label {
+  font-weight: 800;
+  font-size: 10px;
+  color: #8e5b5b;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.jar-goal {
+  bottom: 156px;
+  left: 16px;
+}
+
+.jar-middle {
+  bottom: 83px;
+  left: 5px;
+}
+
+.jar-bottom {
+  bottom: 8px;
+  left: 7px;
+}
 /* STATS */
 
 .stats {
