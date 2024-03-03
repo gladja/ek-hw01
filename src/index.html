@@ -50,7 +50,7 @@
             />
             <div class="stats-data__text-container">
               <div class="stats-data__label">Накопичено</div>
-              <div class="stats-data__value">7&nbsp;700&nbsp;₴</div>
+              <div class="stats-data__value">7&nbsp;700₴</div>
             </div>
           </div>
           <div class="stats-data">
@@ -65,28 +65,76 @@
           </div>
         </div>
       </div>
+
       <div class="card__body">
         <div class="card__wrap">
-          <div class="card__title">
-            Сума поповнення
+          <div class="card__wrap-border">
+            <p class="card__title">
+              Сума поповнення
+              <img
+                src="https://send.monobank.ua/img/money.png"
+                class="card__img"
+                alt="money"
+              />
+            </p>
+            <div class="card__value">
+              <span class="card__value-sum">0</span>
+              &nbsp;₴
+            </div>
+            <p class="card__value-warning">
+              Сумма повинна бути від 10 ₴ до 29 999 ₴
+            </p>
+            <div class="card__btn">
+              <button type="button" class="btn__value" data-action="add_100">
+                +100&nbsp;₴
+              </button>
+              <button class="btn__value" data-action="add_500">
+                +500&nbsp;₴
+              </button>
+              <button class="btn__value" data-action="add_1000">
+                +1&nbsp;000&nbsp;₴
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__input">
+          <input
+            class="card__input-value"
+            placeholder="Ваше ім'я (необов'язково)"
+          />
+        </div>
+        <div class="field card-holder">
+          <input
+            class="card__input-value"
+            placeholder="Коментар (необов'язково)"
+          />
+        </div>
+
+        <button class="btn__pay">
+          <img
+            src="https://send.monobank.ua/img/mono_pay.svg"
+            alt="monobank"
+            height="26"
+          />
+        </button>
+        <button class="btn__pay">
+          <img
+            src="https://gstatic.com/instantbuy/svg/dark_gpay.svg"
+            alt="google pay"
+            height="26"
+          />
+        </button>
+
+        <div class="other__pay">
+          <!-- <hr id="hideHr" class="splitter" /> -->
+          <div class="other__pay-button">
             <img
-              src="https://send.monobank.ua/img/money.png"
-              class="card__img"
+              src="https://send.monobank.ua/img/card.svg"
+              alt="Credit card"
+              class="other__pay-icon"
             />
-          </div>
-          <div class="card__value">
-            <span class="card__value-sum">0</span>&nbsp;₴
-          </div>
-          <div class="card__btn">
-            <button type="button" class="btn__value" data-action="add_100">
-              +100&nbsp;₴
-            </button>
-            <button class="btn__value" data-action="add_500">
-              +500&nbsp;₴
-            </button>
-            <button class="btn__value" data-action="add_1000">
-              +1&nbsp;000&nbsp;₴
-            </button>
+            <div class="other__pay-text">Оплатити карткою</div>
           </div>
         </div>
       </div>
